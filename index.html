@@ -2,14 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      id="favicon"
+      rel="icon"
+      href="assets/favicon-light.ico"
+      type="image/x-icon"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
   </head>
   <body>
-    Hello, world!
+    <nav id="desktop-nav">
+      <div class="logo">Jason Gunawan</div>
+      <div>
+        <ul class="nav-links">
+          <li id="theme-toggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="theme-icon"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile.png" alt="Jason Gunawan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jason Andrew Gunawan</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/CV Jason Andrew Gunawan.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            id="linkedin-icon"
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jasongunawan/'"
+          />
+          <img
+            id="github-icon"
+            src="./assets/github-mark-light.svg"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/jasandgun'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            id="email-icon"
+            src="./assets/email-light.svg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:jac.gunawan@gmail.com">jac.gunawan@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links"></ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Jason Andrew Gunawan. All Rights Reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
